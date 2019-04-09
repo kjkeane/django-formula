@@ -1,0 +1,15 @@
+django:
+  home: '/opt/django'
+  apps_dir: '/opt/django/apps'
+  venvs_dir: '/opt/django/venvs'
+  user: 'django'
+  group: 'django'
+  homedir_user: 'django'
+  homedir_group: 'django'
+  git_branch: 'master'
+  git_url: ''
+  apps:
+    app1:
+      envs:
+        ENV1: VALUE1
+        ENV2: VALUE2

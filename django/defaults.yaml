@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+---
+django:
+  home: '/opt/django'
+  apps_dir: '/opt/django/apps'
+  venvs_dir: '/opt/django/venvs'
+  user: 'django'
+  group: 'django'
+  homedir_user: 'django'
+  homedir_group: 'django'
+  git_branch: master
+  git_url: ''
