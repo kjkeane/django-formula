@@ -3,6 +3,7 @@
 ---
 django:
   home: '/opt/django'
+  upstream_repo: True
   apps_dir: '/opt/django/apps'
   venvs_dir: '/opt/django/venvs'
   user: 'django'

@@ -5,7 +5,7 @@
 {%- set tplroot = tpldir.split('/')[0] %}
 {%- from tplroot ~ "/map.jinja" import django with context %}
 
-{%- if grains[os_family'] == 'RedHat' %}
+{%- if grains[os_family'] == 'RedHat' and upstream-repo %}
 django-epel-release:
   pkg.installed:
     - name: epel-release
@@ -30,7 +30,7 @@ django-epel-packages-pkg-installed:
       - python2-pip
       - python36-devel
       - python36-pip
-{%- if grains['os_family'] == 'RedHat' %}
+{%- if grains['os_family'] == 'RedHat' and upstream-repo %}
     - require:
       - pkg: django-epel-release
 {%- endif %}

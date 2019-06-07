@@ -80,7 +80,6 @@ django_app_directory:
               ) }}
     - template: jinja
     - context:
-        app: {{ app|json }}
         app_items: {{ app_items|json }}
     - require:
       - git: {{ app }}_git_clone
